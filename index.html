@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanshu's Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="header">
+      <h1>🌤️ Priyanshu's Weather Dashboard</h1>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button id="search-button"><i class="fas fa-search"></i> Search</button>
+      <button id="location-button"><i class="fas fa-location-arrow"></i> Use My Location</button>
+    </div>
+    <div id="weather-data">
+      <!-- Weather details will go here -->
+    </div>
+    <div class="forecast-toggle">
+      <button id="hourly-forecast" class="active">Hourly Forecast</button>
+      <button id="weekly-forecast">Weekly Forecast</button>
+    </div>
+    <div class="chart-container">
+      <canvas id="weather-chart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
