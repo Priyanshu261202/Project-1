@@ -1,5 +1,5 @@
 // script.js
-const apiKey = '5486fac1d8ce9d74347324888b3fc780'; 
+const apiKey = 'API HERE'; 
 const searchButton = document.getElementById('search-button');
 const locationButton = document.getElementById('location-button');
 const cityInput = document.getElementById('city-input');
